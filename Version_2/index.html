@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <title>Einkaufsliste</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Einkaufsliste</h1>
+<div class="einkaufliste"><h1>Einkaufsliste</h1>
 <input id="search-text" type="text" placeholder="Filtern">
 <label>
     <input type="checkbox" id="hide-completed"> Eingekauftes anzeigen
 </label>
 <div id="tasks"></div>
 <form id="new-task">
+
     <input type="text" placeholder="zur Einkaufsliste hinzufügen" name="text">
+
     <button>Hinzufügen</button>
 </form>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a class="rot" href="#">Kleider</a>
+        <a class="orange" href="#">Lebensmittel</a>
+        <a class="gelb"href="#">Haushalt</a>
+        <a class="grün" href="#">Elektronisches</a>
+        <a  class="blau"href="#">sonstiges</a>
+    </div>
+</div>
+</div>
 <script src="uuid_v4.js"></script>
 <script src="task-functions.js"></script>
 <script src="task-app.js"></script>
+<script src="dropdown.js"></script>
 </body>
 </html>
