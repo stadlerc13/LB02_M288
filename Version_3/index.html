@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Einkaufsliste</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="einkaufliste"><h1>Einkaufsliste</h1>
+<input id="search-text" type="text" placeholder="Filtern">
+    <select id="filter-category" name="filter-category">
+        <option value="" selected>Alle</option>
+        <option value="Kleider">Kleider</option>
+        <option value="Lebensmittel">Lebensmittel</option>
+    </select>
+<label>
+    <input type="checkbox" id="hide-completed"> Eingekauftes anzeigen
+</label>
+<div id="tasks"></div>
+<form id="new-task">
+    <input type="text" placeholder="zur Einkaufsliste hinzufügen" name="text">
+    <select id="category" name="category">
+        <option value="-">Kategorien</option>
+        <option value="Kleider">Kleider</option>
+        <option value="Lebensmittel">Lebensmittel</option>
+    </select>
+    <button>Hinzufügen</button>
+</form>
+    <p id="error"></p>
+</div>
+<script src="uuid_v4.js"></script>
+<script src="task-functions.js"></script>
+<script src="task-app.js"></script>
+<script src="dropdown.js"></script>
+</body>
+</html>
