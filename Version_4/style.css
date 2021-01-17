@@ -15,33 +15,64 @@
     flex-wrap: wrap;
     justify-content: left;
     margin-left: 25vw;
-
 }
+
+h1{
+    text-transform: uppercase;
+}
+
 #tasks {
     width: 45vw;
-    margin: 1vh 0 0 0
+    margin: 1vh 0 0 0;
 }
 
 .filterfields {
     width: 45vw;
-    margin: 1vh 0 0 0
+    margin: 1vh 0 0 0;
+
+
 }
 
 .inputfields{
     width: 45vw;
     margin: 1vh 0 0 0;
+
 }
 
 .button1{
-    width: 15vw;
+    width: 18vw;
+
 }
 .button3{
     width: 10vw;
     text-align: left;
     background-color: darkcyan;
 }
+.button3:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
 button{
+    padding: 0 0.25vw;
+    margin: 0.25vh;
+    width: 5%;
+    height: 15%;
+    background-color: darkred;
+    color: white;
+    border-radius:8px;
+    border:2px solid white;
+}
+span{
+    margin: 1vh 0.5vw;
+}
 
+select{
+    border-radius:8px;
+    border:2px solid white;
+}
+input{
+    border-radius:8px;
+    border:2px solid white;
 }
 
 .rot{
