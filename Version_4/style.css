@@ -1,0 +1,69 @@
+*{
+    font-family: "Segoe UI";
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+
+}
+
+
+.einkaufliste {
+    display: flex;
+    width: 50vw;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 25vw;
+
+}
+#tasks {
+    width: 45vw;
+    margin: 1vh 0 0 0
+}
+
+.filterfields {
+    width: 45vw;
+    margin: 1vh 0 0 0
+}
+
+.inputfields{
+    width: 45vw;
+    margin: 1vh 0 0 0;
+}
+
+.button1{
+    width: 15vw;
+}
+.button3{
+    width: 10vw;
+    text-align: left;
+    background-color: darkcyan;
+}
+button{
+
+}
+
+.rot{
+    background-color: #FF968A;
+}
+
+.orange{
+    background-color: #FFC8A2;
+}
+
+.gelb{
+    background-color: #FFFFB5;
+}
+.grün{
+    background-color: #A2E1DB;
+}
+
+.blau{
+    background-color: #55CBCD;
+}
+
+#error{
+    color: darkred;
+    font-weight: bold;
+}

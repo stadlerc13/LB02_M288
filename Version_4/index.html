@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Einkaufsliste</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="einkaufliste"><h1>Digitale Einkaufsliste</h1>
+<div class="filterfields"> <input id="search-text" type="text" placeholder="Filtern">
+    <select id="filter-category" name="filter-category">
+        <option value="" selected>Alle</option>
+        <option class="rot" value="Kleider">Kleider</option>
+        <option class="orange" value="Lebensmittel">Lebensmittel</option>
+        <option class="gelb" value="Haushalt">Haushalt</option>
+        <option class="grün" value="Elektronisches">Elektronisches</option>
+        <option class="blau" value="sonstiges">Sonstiges</option>
+    </select>
+<label>
+    <input type="checkbox" id="hide-completed"> Eingekauftes anzeigen
+</label>
+</div>
+<div id="tasks"></div>
+<div class="inputfields"><form id="new-task">
+    <input class="button1" type="text" placeholder="zur Einkaufsliste hinzufügen" name="text">
+    <select id="category" name="category">
+        <option value="-">Kategorien</option>
+        <option class="rot" value="Kleider">Kleider</option>
+        <option class="orange" value="Lebensmittel">Lebensmittel</option>
+        <option class="gelb" value="Haushalt">Haushalt</option>
+        <option class="grün" value="Elektronisches">Elektronisches</option>
+        <option class="blau" value="sonstiges">sonstiges</option>
+    </select>
+    <button class="button3">Hinzufügen</button>
+</form>
+    <p id="error"></p>
+
+</div>
+<script src="uuid_v4.js"></script>
+<script src="task-functions.js"></script>
+<script src="task-app.js"></script>
+<script src="dropdown.js"></script>
+</body>
+</html>
